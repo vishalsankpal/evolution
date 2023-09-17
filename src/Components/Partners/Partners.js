@@ -16,17 +16,17 @@ function Partners() {
             <Row>
               <Col md={4}>
                 <div className="partners-img-wrapper">
-                  <img src={partner1} alt="partner1" />
+                  <img src={partner1} alt="partner1" loading="lazy" />
                 </div>
               </Col>
               <Col md={4}>
                 <div className="partners-img-wrapper">
-                  <img src={partner2} alt="partner1" />
+                  <img src={partner2} alt="partner1" loading="lazy" />
                 </div>
               </Col>
               <Col md={4}>
                 <div className="partners-img-wrapper">
-                  <img src={partner3} alt="partner1" />
+                  <img src={partner3} alt="partner1" loading="lazy" />
                 </div>
               </Col>
             </Row>

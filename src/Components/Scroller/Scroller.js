@@ -21,7 +21,7 @@ function Scroller() {
   };
   return (
     <div className={scrollToTop ? "scroller" : ""} onClick={scrollTopHandler}>
-      <img src={scroller} alt="scroller" />
+      <img src={scroller} alt="scroller" loading="lazy" />
     </div>
   );
 }

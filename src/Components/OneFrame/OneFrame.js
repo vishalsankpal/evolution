@@ -38,32 +38,23 @@ function OneFrame() {
         One Frame At <br />
         <span>A Time</span>
       </h2>
-      <OwlCarousel
-        className="owl-theme frame-carousel"
-        {...options}
-        // loop
-        // margin={30}
-        // nav={false}
-        // items={4}
-        // center={true}
-        // dots={false}
-      >
+      <OwlCarousel className="owl-theme frame-carousel" {...options}>
         <div class="item">
-          <img src={frame1} alt="frame1" />
+          <img src={frame1} alt="frame1" loading="lazy" />
         </div>
         <div class="item">
-          <img src={frame2_1} alt="frame1" />
-          <img src={frame2_2} alt="frame1" />
+          <img src={frame2_1} alt="frame1" loading="lazy" />
+          <img src={frame2_2} alt="frame1" loading="lazy" />
         </div>
         <div class="item">
-          <img src={frame3} alt="frame1" />
+          <img src={frame3} alt="frame1" loading="lazy" />
         </div>
         <div class="item">
-          <img src={frame4} alt="frame1" />
+          <img src={frame4} alt="frame1" loading="lazy" />
         </div>
         <div class="item">
-          <img src={frame5_1} alt="frame1" />
-          <img src={frame5_2} alt="frame1" />
+          <img src={frame5_1} alt="frame1" loading="lazy" />
+          <img src={frame5_2} alt="frame1" loading="lazy" />
         </div>
       </OwlCarousel>
       <div className="explore-btn">

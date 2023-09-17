@@ -24,8 +24,18 @@ function Digital() {
               Download <strong>Amble App</strong> from
             </h3>
             <div className="store-wrapper">
-              <img src="" alt="playstore" className="playstore" />
-              <img src="" alt="appleStore" className="appleStore" />
+              <img
+                src=""
+                alt="playstore"
+                className="playstore"
+                loading="lazy"
+              />
+              <img
+                src=""
+                alt="appleStore"
+                className="appleStore"
+                loading="lazy"
+              />
             </div>
             <ButtonComponent className="large">KNOW MORE</ButtonComponent>
           </Col>

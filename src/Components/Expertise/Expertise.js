@@ -47,20 +47,10 @@ function Expertise() {
         onSelect={(k) => setKey(k)}
       >
         <Tab eventKey="home" title="ART & DESIGN">
-          <OwlCarousel
-            className="owl-theme"
-            {...options}
-            // loop={false}
-            // center={true}
-            // URLhashListener={true}
-            // margin={50}
-            // nav={false}
-            // dots={false}
-            // items={4}
-          >
+          <OwlCarousel className="owl-theme" {...options}>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art1} alt="art1" />
+                <img src={art1} alt="art1" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -71,7 +61,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art2} alt="art2" />
+                <img src={art2} alt="art2" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -82,7 +72,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art3} alt="art3" />
+                <img src={art3} alt="art3" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -93,7 +83,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art4} alt="art4" />
+                <img src={art4} alt="art4" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -105,20 +95,10 @@ function Expertise() {
           </OwlCarousel>
         </Tab>
         <Tab eventKey="profile" title="COMMUNITY DEVELOPEMENT">
-          <OwlCarousel
-            className="owl-theme"
-            {...options}
-            // loop={false}
-            // center={true}
-            // URLhashListener={true}
-            // margin={50}
-            // nav={false}
-            // dots={false}
-            // items={4}
-          >
+          <OwlCarousel className="owl-theme" {...options}>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art1} alt="art1" />
+                <img src={art1} alt="art1" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -129,7 +109,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art2} alt="art2" />
+                <img src={art2} alt="art2" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -140,7 +120,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art3} alt="art3" />
+                <img src={art3} alt="art3" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -151,7 +131,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art4} alt="art4" />
+                <img src={art4} alt="art4" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -163,20 +143,10 @@ function Expertise() {
           </OwlCarousel>
         </Tab>
         <Tab eventKey="contact" title="HERITAGE URBANISM">
-          <OwlCarousel
-            className="owl-theme"
-            {...options}
-            // loop={false}
-            // center={true}
-            // URLhashListener={true}
-            // margin={50}
-            // nav={false}
-            // dots={false}
-            // items={4}
-          >
+          <OwlCarousel className="owl-theme" {...options}>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art1} alt="art1" />
+                <img src={art1} alt="art1" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -187,7 +157,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art2} alt="art2" />
+                <img src={art2} alt="art2" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -198,7 +168,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art3} alt="art3" />
+                <img src={art3} alt="art3" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -209,7 +179,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art4} alt="art4" />
+                <img src={art4} alt="art4" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -237,7 +207,7 @@ function Expertise() {
           >
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art1} alt="art1" />
+                <img src={art1} alt="art1" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -248,7 +218,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art2} alt="art2" />
+                <img src={art2} alt="art2" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -259,7 +229,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art3} alt="art3" />
+                <img src={art3} alt="art3" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">
@@ -270,7 +240,7 @@ function Expertise() {
             </div>
             <div class="item">
               <div className="expertise-img-wrapper">
-                <img src={art4} alt="art4" />
+                <img src={art4} alt="art4" loading="lazy" />
                 <div className="caption-wrapper">
                   <p className="art-category">ART & DESIGN</p>
                   <h3 className="art-title">

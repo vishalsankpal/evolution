@@ -15,7 +15,7 @@ function Equitable() {
         </ButtonComponent>
       </div>
       <div className="equitable-temple-wrapper">
-        <img src={temple} alt="temple" />
+        <img src={temple} alt="temple" loading="lazy" />
       </div>
     </section>
   );

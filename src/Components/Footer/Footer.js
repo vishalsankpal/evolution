@@ -12,7 +12,7 @@ function Footer() {
         <Container>
           <Row className="footer-row">
             <Col className="footer-logo-column" lg={3} sm={6}>
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" loading="lazy" />
             </Col>
             <Col className="mobile-center" lg={3} sm={6}>
               <h3 className="footer-title">PROJECTS</h3>
