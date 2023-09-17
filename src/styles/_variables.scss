@@ -1,0 +1,93 @@
+$primary: #f9a825;
+$white: #fff;
+$black: #000;
+$light-black: #222222;
+$dark-blue: #0f2d49;
+$grey: #777777;
+$light-grey: #f6f6f6;
+$light-mid-grey: #f5f5f5;
+$light-low-grey: #f4f4f4;
+
+@font-face {
+  font-family: "Gloss_And_Bloom"; /*Can be any text*/
+  src: url("./Fonts/Gloss_And_Bloom.ttf") format("truetype");
+  //   font-display: fallback;
+}
+@font-face {
+  font-family: "proximanova-regular"; /*Can be any text*/
+  src: url("./Fonts/ProximaNova-Regular.ttf") format("truetype");
+  //   font-display: fallback;
+}
+@font-face {
+  font-family: "proximanova-medium"; /*Can be any text*/
+  src: url("./Fonts/Fontspring-DEMO-proximanova-medium.otf") format("opentype");
+  //   font-display: fallback;
+}
+@font-face {
+  font-family: "proximanova-light"; /*Can be any text*/
+  src: url("./Fonts/ProximaNova-Light.ttf") format("truetype");
+  //   font-display: fallback;
+}
+@font-face {
+  font-family: "proximanova-bold"; /*Can be any text*/
+  src: url("./Fonts/ProximaNova-Bold.ttf") format("truetype");
+  //   font-display: fallback;
+}
+@font-face {
+  font-family: "proximanova"; /*Can be any text*/
+  src: url("./Fonts/ProximaNovaFont.otf") format("opentype");
+  //   font-display: fallback;
+}
+.gb {
+  font-family: "Gloss_And_Bloom";
+}
+.pr {
+  font-family: "proximanova-regular"; //normal
+}
+.pm {
+  font-family: "proximanova-medium";
+}
+.pl {
+  font-family: "proximanova-light"; //300
+}
+.pb {
+  font-family: "proximanova-bold";
+}
+// .pn {
+//   font-family: "proximanova";
+// }
+.section-title {
+  // font: normal normal normal 100px/150px "Gloss_And_Bloom";
+  font-size: 6.25rem;
+  line-height: 9.375rem;
+  font-family: "Gloss_And_Bloom";
+  letter-spacing: -0.2px;
+  span {
+    color: $primary;
+  }
+  &.large-height {
+    line-height: 10.813rem;
+  }
+  &.light {
+    color: $white;
+  }
+  &.dark {
+    color: $dark-blue;
+  }
+  @media only screen and (max-width: 1736px) {
+    font-size: 4.688rem;
+    line-height: 7.813rem;
+  }
+  @media only screen and (max-width: 1528px) {
+    font-size: 4.388rem;
+    line-height: 7.013rem;
+  }
+  @media only screen and (max-width: 992px) {
+    font-size: 3.688rem;
+    line-height: 5.813rem;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 2.688rem;
+    line-height: 4.813rem;
+  }
+}

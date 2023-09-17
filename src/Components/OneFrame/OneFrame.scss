@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+.one-frame {
+  padding: 128px 0 115px;
+  background-image: url("../../assets/images/frame.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  .section-subtitle {
+    // font: normal normal 300 24px/36px Proxima Nova;
+    @extend .pr;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.03px;
+    color: $white;
+    margin-bottom: 2.5rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 1.2rem;
+      line-height: 1.55rem;
+    }
+  }
+  .section-title {
+    position: relative;
+    z-index: 2;
+  }
+  .frame-carousel {
+    position: relative;
+    margin-top: -172px;
+    .owl-stage-outer {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .owl-item {
+      &.active {
+        transform: scaleY(1.2) translateY(-13%);
+        &.center {
+          transform: scaleY(1.5) translateY(17%);
+          & + .active + .active {
+            transform: scale(0.8) translateY(22%);
+          }
+        }
+      }
+      &.cloned:not(.active) {
+        transform: scale(0.8) translateY(22%);
+      }
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.875rem;
+    }
+  }
+  .explore-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.813rem;
+  }
+}

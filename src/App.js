@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import logo from "./logo.svg";
+import React, { useRef, useEffect, useState } from "react";
+import "./App.css";
+// import Container from "react-bootstrap/Container";
+import Header from "./Components/Header/Header";
+import BannerSlider from "./Components/Banner/BannerSlider";
+import Initiative from "./Components/Initiative/Initiative";
+import Digital from "./Components/Digital/Digital";
+import Expertise from "./Components/Expertise/Expertise";
+import Partners from "./Components/Partners/Partners";
+import OneFrame from "./Components/OneFrame/OneFrame";
+import Equitable from "./Components/Equitable/Equitable";
+import WriteToUs from "./Components/WriteToUs/WriteToUs";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <BannerSlider />
+      <Initiative />
+      <Digital />
+      <Expertise />
+      <Partners />
+      <OneFrame />
+      <Equitable />
+      <WriteToUs />
+      <Footer />
+    </>
   );
 }
 

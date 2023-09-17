@@ -1,0 +1,102 @@
+@import "../../styles/variables";
+
+.expertise {
+  background-image: url("../../assets/images/Expertise.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 157px 0 186px;
+  margin-top: -1.688rem;
+  position: relative;
+  z-index: 1;
+  .expertise-inner-wrapper {
+    // padding-left: 514px;
+    text-align: center;
+    .section-title {
+      margin-bottom: 1rem;
+    }
+  }
+  .nav-tabs {
+    justify-content: center;
+    margin-bottom: 3.75rem;
+    .nav-item {
+      .nav-link {
+        background-color: transparent;
+        // font: normal normal medium 18px/95px Proxima Nova;
+        @extend .pm;
+        font-size: 1.125rem;
+        line-height: normal;
+        letter-spacing: 0px;
+        color: $light-black;
+        text-transform: uppercase;
+        opacity: 0.5;
+        border: none;
+        padding: 0.5rem 1.875rem;
+        &.active {
+          opacity: 1;
+        }
+        &::before {
+          background-color: transparent;
+        }
+        &:hover {
+          background-color: transparent;
+          &::before {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .owl-theme {
+    // transform: translateX(-221px);
+    .item {
+      .expertise-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: auto;
+          transition: 0.3s ease all;
+        }
+        .caption-wrapper {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          padding: 2.5rem;
+          background: linear-gradient(
+              180deg,
+              #00000000 0%,
+              #00000063 41%,
+              #000000b3 100%
+            )
+            0% 0% no-repeat padding-box;
+        }
+        .art-category {
+          // font: normal normal normal 14px/17px Proxima Nova;
+          @extend .pr;
+          font-size: 0.875rem;
+          line-height: 1.063rem;
+          letter-spacing: 0px;
+          color: $white;
+          text-transform: uppercase;
+          margin-bottom: 0.625rem;
+          opacity: 0.7;
+        }
+        .art-title {
+          // font: normal normal normal 24px/95px Proxima Nova;
+          @extend .pr;
+          font-size: 1.5rem;
+          letter-spacing: -0.06rem;
+          color: $white;
+          margin-bottom: 0;
+        }
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

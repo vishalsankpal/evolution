@@ -1,0 +1,132 @@
+@import "../../styles/variables";
+.initiatives-section {
+  padding: 142px 0 183px;
+  //
+  background-image: url("../../assets/images/bannerBg.png");
+  position: relative;
+  //   background: #f5f5f5;
+  margin-top: -203px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-position: 100% -77px;
+  background-size: 100% 105%;
+  width: 100%;
+
+  .section-title {
+    padding-left: 100px;
+    position: relative;
+    top: 165px;
+    z-index: 2;
+    @media only screen and (max-width: 475px) {
+      padding-left: 45px;
+    }
+  }
+  .initiative-slider-wrapper {
+    background-image: url("../../assets/images/InitiativeBgImage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .initiative-slide-container {
+      .owl-wrapper {
+        max-width: 670px;
+        margin-left: 0;
+        background-color: $light-mid-grey;
+        padding: 316px 80px 168px;
+        position: relative;
+        @media only screen and (max-width: 475px) {
+          padding: 316px 45px 150px;
+        }
+        .owl-nav {
+          position: absolute;
+          top: 150px;
+          width: 100%;
+          left: 45px;
+          margin-top: 0;
+          display: flex;
+          justify-content: flex-end;
+          @media only screen and (max-width: 768px) {
+            left: 0;
+            justify-content: center;
+          }
+          button {
+            height: 80px;
+            width: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+            border: 1px solid transparent;
+            margin: 0 7.5px;
+            @media only screen and (max-width: 1200px) {
+              height: 60px;
+              width: 60px;
+            }
+            span {
+              display: none;
+            }
+            &::after {
+              content: "\2192";
+              color: $primary;
+              font-size: 2.563rem;
+              font-weight: 700;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              left: 50%;
+              top: 45%;
+            }
+            &:not(.disabled) {
+              background-color: $primary;
+              &::after {
+                color: $white;
+              }
+              &:hover {
+                border: 1px solid $primary;
+                background-color: $white;
+                &::after {
+                  color: $primary;
+                }
+              }
+            }
+            &.disabled {
+              background-color: $white;
+              border: 1px dashed $primary;
+            }
+            &.owl-prev {
+              &::after {
+                transform: translate(-50%, -50%) rotate(180deg);
+                top: 58%;
+              }
+            }
+          }
+        }
+        .item {
+          .initiative-title {
+            color: $black;
+            letter-spacing: -0.125rem;
+            // font: normal normal bold 50px/57px "Proxima Nova";
+            @extend .pb;
+            font-size: 3.125rem;
+            line-height: 3.563rem;
+            margin-bottom: 2.375rem;
+            @media only screen and (max-width: 768px) {
+              font-size: 2.125rem;
+            }
+          }
+          .initiative-small-information {
+            // font: normal normal normal 18px/26px "Proxima Nova";
+            @extend .pr;
+            font-size: 1.125rem;
+            line-height: 1.625rem;
+            letter-spacing: -0.023rem;
+            color: $grey;
+            margin-bottom: 4rem;
+            @media only screen and (max-width: 768px) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

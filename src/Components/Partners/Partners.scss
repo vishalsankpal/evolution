@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+.our-partners {
+  padding: 192px 0 210px;
+  background-image: url("../../assets/images/partners.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  margin-top: -18px;
+  z-index: 1;
+  .section-title {
+    margin-bottom: 70px;
+  }
+  .partners-outer-row {
+    justify-content: center;
+    .partners-img-wrapper {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+    }
+    .row {
+      row-gap: 1.875rem;
+    }
+  }
+}

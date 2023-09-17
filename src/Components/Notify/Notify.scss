@@ -1,0 +1,20 @@
+.notify {
+  &-danger {
+    background-color: red;
+  }
+  &-success {
+    background-color: green;
+  }
+}
+.msg-wrapper {
+  position: fixed;
+  width: 30%;
+  left: 0;
+  bottom: 45px;
+  z-index: 1;
+  padding: 1.25rem;
+  p {
+    margin-bottom: 0;
+    color: #fff;
+  }
+}
