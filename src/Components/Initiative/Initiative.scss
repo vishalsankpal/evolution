@@ -53,7 +53,8 @@
           button {
             height: 80px;
             width: 80px;
-            display: flex;
+            display: grid;
+            place-items: center;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
@@ -96,10 +97,11 @@
               border: 1px dashed $primary;
             }
             &.owl-prev {
-              &::after {
-                transform: translate(-50%, -50%) rotate(180deg);
-                top: 58%;
-              }
+              transform: rotate(180deg);
+              // &::after {
+              //   transform: translate(-50%, -50%) rotate(180deg);
+              //   top: 58%;
+              // }
             }
           }
         }
