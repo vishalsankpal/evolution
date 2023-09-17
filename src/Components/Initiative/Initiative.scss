@@ -11,7 +11,9 @@
   background-position: 100% -77px;
   background-size: 100% 105%;
   width: 100%;
-
+  @media only screen and (max-width: 575px) {
+    margin-top: -197px;
+  }
   .section-title {
     padding-left: 100px;
     position: relative;
@@ -74,6 +76,7 @@
               transform: translate(-50%, -50%);
               left: 50%;
               top: 45%;
+              line-height: 0;
             }
             &:not(.disabled) {
               background-color: $primary;
